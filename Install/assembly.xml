@@ -28,7 +28,7 @@
         <add source="adder/vehicles/adder_hi.yft">adder_hi.yft</add>
       </archive>
     </archive>
-    <add source="r8ppi">update/x64/dlcpacks/</add>
+    <add source="r8ppi/dlc.rpf">update/x64/dlcpacks/r8ppi/dlc.rpf</add>
     <!-- STEP FIVE BELOW-->
     <archive path="update/update.rpf" createIfNotExist="True" type="RPF7">
       <xml path="common/data/dlclist.xml">
@@ -36,7 +36,7 @@
           <item>dlcpacks:\r8ppi\</item>
         </add>
       </xml>
-      <xml path ="common/data/extratitleupdatedata.meta ">
+      <xml path ="common/data/extratitleupdatedata.meta">
         <add xpath="SExtraTitleUpdateData/Mounts">
           <Item type="SExtraTitleUpdateMount">
             <deviceName>dlc_r8ppi:/</deviceName>
@@ -50,9 +50,9 @@
     <archive path="update/update.rpf" createIfNotExist="True" type="RPF7">
       <!--UPDATE.RPF-->
       
-      <xml path="common/data/levels/gta5/handling.meta">
+      <xml path="common/data/handling.meta">
         <!--VEHICLES.META-->
-        <replace xpath='/CHandlingDataMgr/HandlingData/Item[handlingName="adder"]'>
+        <replace xpath='//Item[handlingName="ADDER"]'>
           <Item type="CHandlingData">
           <handlingName>ADDER</handlingName>
           <fMass value="1800.000000" />
